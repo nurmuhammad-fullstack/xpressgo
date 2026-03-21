@@ -59,13 +59,13 @@ export function Header() {
         <div className="container mx-auto px-4">
           <div className="flex h-20 items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex shrink-0 items-center">
               <Image
                 src="/xgo-logo.png"
                 alt="XGO"
                 width={160}
                 height={80}
-                style={{ width: "auto", height: "56px" }}
+                className="h-7 w-auto sm:h-8 lg:h-9"
                 priority
               />
             </Link>

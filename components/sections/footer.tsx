@@ -50,7 +50,7 @@ export function Footer() {
                 alt="XGO"
                 width={180}
                 height={90}
-                style={{ width: "auto", height: "72px" }}
+                className="h-9 w-auto sm:h-10 lg:h-12"
               />
             </div>
             

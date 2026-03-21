@@ -14,9 +14,9 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: 'XpressGo — Navbatsiz qahva va taom | Toshkent',
-  description: 'Telegram orqali qahva, sharbat va hot-dog buyurtma bering. Vaqtingizni tanlang, Click yoki Payme bilan to\'lang va navbatsiz olib keting. Toshkentda 120+ hamkor kafe.',
-  keywords: ['xpressgo', 'pre-order', 'qahva', 'coffee', 'tashkent', 'telegram', 'navbatsiz', 'buyurtma', 'click', 'payme'],
+  title: 'XpressGo — Navbatsiz qahva buyurtma',
+  description: 'XpressGo — Toshkentda navbatsiz qahva buyurtma bering. Tez, qulay, arzon.',
+  keywords: ['qahva', 'navbatsiz qahva', 'Toshkent', 'XpressGo', 'coffee'],
   authors: [{ name: 'XpressGo' }],
   creator: 'XpressGo',
   publisher: 'XpressGo',
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'uz_UZ',
     url: 'https://xpressgo.uz',
-    title: 'XpressGo — Navbatsiz qahva va taom',
-    description: 'Telegram orqali qahva, sharbat va hot-dog buyurtma bering. Navbatsiz olib keting!',
+    title: 'XpressGo',
+    description: 'Navbatsiz qahva buyurtma bering',
     siteName: 'XpressGo',
     images: [
       { url: '/og-image.jpg', width: 1200, height: 630, alt: 'XpressGo - Navbatsiz xizmat' },
@@ -43,8 +43,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'XpressGo — Navbatsiz qahva va taom',
-    description: 'Telegram orqali buyurtma bering, navbatsiz olib keting!',
+    title: 'XpressGo — Navbatsiz qahva buyurtma',
+    description: 'XpressGo — Toshkentda navbatsiz qahva buyurtma bering. Tez, qulay, arzon.',
     images: ['/og-image.jpg'],
   },
   robots: {

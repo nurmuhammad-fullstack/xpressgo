@@ -101,13 +101,13 @@ export function B2BSection() {
             className="relative flex items-center justify-center"
           >
             {/* Background Glow */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-500/20 to-blue-500/20 blur-3xl" />
+            <div className="pointer-events-none absolute inset-0 rounded-full bg-gradient-to-br from-cyan-500/20 to-blue-500/20 blur-3xl" />
             
             {/* Mascot */}
             <motion.div
               animate={{ y: [-10, 10, -10] }}
               transition={{ duration: 5, repeat: Infinity }}
-              className="relative"
+              className="relative isolate px-4 pb-6 pt-10 lg:px-8"
             >
               {/* Speech Bubble */}
               <motion.div
@@ -115,7 +115,7 @@ export function B2BSection() {
                 whileInView={{ opacity: 1, scale: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.8, duration: 0.5 }}
-                className="absolute -right-4 -top-4 z-10 max-w-[220px] rounded-2xl bg-white px-5 py-4 shadow-xl lg:-right-8"
+                className="absolute right-0 top-0 z-20 max-w-[220px] rounded-2xl bg-white px-5 py-4 shadow-xl lg:right-2 lg:top-2"
               >
                 <p className="text-sm font-medium text-gray-800">
                   &ldquo;Har kuni 200+ yangi buyurtma! XpressGo bizning eng yaxshi qarorimiz bo'ldi.&rdquo;
@@ -125,13 +125,13 @@ export function B2BSection() {
               </motion.div>
 
               {/* 3D Mascot Character - Brand Face */}
-              <div className="relative h-80 w-80 lg:h-[420px] lg:w-[420px]">
+              <div className="relative z-0 h-80 w-80 lg:h-[420px] lg:w-[420px]">
                 <Image
-                  src="/mascot.png"
+                  src="/mascot2.png"
                   alt="XpressGo hamkor maskoti"
                   width={420}
                   height={420}
-                  className="relative z-10 drop-shadow-2xl"
+                  className="relative z-0 h-full w-full object-contain drop-shadow-2xl"
                 />
               </div>
 
@@ -139,7 +139,7 @@ export function B2BSection() {
               <motion.div
                 animate={{ y: [5, -5, 5] }}
                 transition={{ duration: 4, repeat: Infinity, delay: 1 }}
-                className="absolute -left-8 bottom-16 rounded-xl bg-white p-4 shadow-xl lg:-left-16"
+                className="absolute bottom-8 left-0 z-20 rounded-xl bg-white p-4 shadow-xl lg:-left-10 lg:bottom-16"
               >
                 <div className="flex items-center gap-3">
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-green-400 to-green-500">

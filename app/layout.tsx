@@ -28,11 +28,6 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://xpressgo.uz'),
   alternates: {
     canonical: '/',
-    languages: {
-      'uz': '/uz',
-      'ru': '/ru',
-      'en': '/en',
-    },
   },
   openGraph: {
     type: 'website',
@@ -42,19 +37,15 @@ export const metadata: Metadata = {
     description: 'Telegram orqali qahva, sharbat va hot-dog buyurtma bering. Navbatsiz olib keting!',
     siteName: 'XpressGo',
     images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'XpressGo - Navbatsiz xizmat',
-      },
+      { url: '/og-image.jpg', width: 1200, height: 630, alt: 'XpressGo - Navbatsiz xizmat' },
+      { url: '/icon-512.png', width: 512, height: 512, alt: 'XpressGo icon' },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'XpressGo — Navbatsiz qahva va taom',
     description: 'Telegram orqali buyurtma bering, navbatsiz olib keting!',
-    images: ['/og-image.png'],
+    images: ['/og-image.jpg'],
   },
   robots: {
     index: true,
@@ -71,6 +62,10 @@ export const metadata: Metadata = {
     icon: '/icon-light-32x32.png',
     shortcut: '/icon-light-32x32.png',
     apple: '/apple-icon.png',
+    other: [
+      { rel: 'manifest', url: '/manifest.json' },
+      { rel: 'icon', url: '/icon-512.png', type: 'image/png', sizes: '512x512' },
+    ],
   },
 }
 
@@ -120,12 +115,70 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'XpressGo',
+    url: 'https://xpressgo.uz',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: 'https://xpressgo.uz/?q={search_term_string}',
+      'query-input': 'required name=search_term_string',
+    },
+  }
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Bosh sahifa',
+        item: 'https://xpressgo.uz/',
+      },
+    ],
+  }
+
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'XpressGo',
+    url: 'https://xpressgo.uz',
+    logo: 'https://xpressgo.uz/icon-512.png',
+    sameAs: [
+      'https://t.me/xpressgo',
+      'https://instagram.com/xpressgo',
+    ],
+    contactPoint: [
+      {
+        '@type': 'ContactPoint',
+        telephone: '+998901234567',
+        contactType: 'customer service',
+        areaServed: 'UZ',
+        availableLanguage: ['uz', 'ru', 'en'],
+      },
+    ],
+  }
+
   return (
     <html lang="uz" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
       </head>
       <body className="font-sans antialiased">

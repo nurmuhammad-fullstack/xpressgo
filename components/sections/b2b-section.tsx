@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { TrendingUp, Users, BarChart3, Headphones, ArrowRight } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 const features = [
   {
@@ -85,9 +86,14 @@ export function B2BSection() {
               <Button
                 size="lg"
                 className="group h-14 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 px-8 text-lg font-semibold text-white shadow-lg shadow-cyan-500/20 transition-all hover:shadow-xl hover:shadow-cyan-500/30"
+                asChild
               >
-                Hamkor bo'lish
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                <Link href="#contact">
+                  <span className="flex items-center gap-2">
+                    Hamkor bo'lish
+                    <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </Link>
               </Button>
             </motion.div>
           </motion.div>
@@ -101,7 +107,7 @@ export function B2BSection() {
             className="relative flex items-center justify-center"
           >
             {/* Background Glow */}
-            <div className="pointer-events-none absolute inset-0 rounded-full bg-gradient-to-br from-cyan-500/20 to-blue-500/20 blur-3xl" />
+            <div className="pointer-events-none absolute inset-0 rounded-full bg-gradient-to-br from-cyan-500/15 to-blue-500/15 blur-2xl" />
             
             {/* Mascot */}
             <motion.div

@@ -131,12 +131,12 @@ export function HowItWorksSection() {
       <motion.div
         animate={shouldReduceMotion ? { y: 0, rotate: 0 } : { y: [-20, 20, -20], rotate: [0, 5, 0] }}
         transition={shouldReduceMotion ? undefined : { duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute left-10 top-40 h-20 w-20 rounded-full bg-gradient-to-br from-blue-500/10 to-cyan-500/10 blur-xl will-change-transform"
+        className="absolute left-10 top-40 h-16 w-16 rounded-full bg-gradient-to-br from-blue-500/10 to-cyan-500/10 blur-lg will-change-transform"
       />
       <motion.div
         animate={shouldReduceMotion ? { y: 0, rotate: 0 } : { y: [20, -20, 20], rotate: [0, -5, 0] }}
         transition={shouldReduceMotion ? undefined : { duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-40 right-10 h-24 w-24 rounded-full bg-gradient-to-br from-emerald-500/10 to-teal-500/10 blur-xl will-change-transform"
+        className="absolute bottom-40 right-10 h-20 w-20 rounded-full bg-gradient-to-br from-emerald-500/10 to-teal-500/10 blur-lg will-change-transform"
       />
 
       <div className="container relative mx-auto px-4">

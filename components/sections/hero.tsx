@@ -4,6 +4,7 @@ import { motion, useReducedMotion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Zap, Clock, CreditCard } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -39,9 +40,9 @@ export function HeroSection() {
     <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-[#0057FF] via-[#0080FF] to-[#00C9C8]">
       {/* Background Decorations */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -left-16 -top-16 h-80 w-80 rounded-full bg-white/10 blur-2xl" />
-        <div className="absolute -right-16 top-1/3 h-72 w-72 rounded-full bg-cyan-300/20 blur-2xl" />
-        <div className="absolute bottom-0 left-1/3 h-64 w-64 rounded-full bg-blue-400/20 blur-2xl" />
+        <div className="absolute -left-16 -top-16 h-72 w-72 rounded-full bg-white/10 blur-xl" />
+        <div className="absolute -right-16 top-1/3 h-64 w-64 rounded-full bg-cyan-300/18 blur-xl" />
+        <div className="absolute bottom-0 left-1/3 h-56 w-56 rounded-full bg-blue-400/18 blur-xl" />
       </div>
 
       <div className="container relative mx-auto px-4 pb-20 pt-32 lg:pt-40">
@@ -94,20 +95,24 @@ export function HeroSection() {
               variants={fadeInUp}
               className="flex flex-col items-center gap-4 sm:flex-row lg:justify-start"
             >
-              <Button
-                size="lg"
-                className="group h-14 rounded-full bg-white px-8 text-lg font-semibold text-[#0057FF] shadow-xl shadow-blue-900/20 transition-all hover:bg-cyan-50 hover:shadow-2xl"
-              >
-                Telegram orqali boshlash
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="h-14 rounded-full border-2 border-white/30 bg-white/10 px-8 text-lg font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/20"
-              >
-                Qanday ishlaydi?
-              </Button>
+              <Link href="https://t.me/xpressgo_bot" target="_blank" rel="noopener noreferrer">
+                <Button
+                  size="lg"
+                  className="group h-14 rounded-full bg-white px-8 text-lg font-semibold text-[#0057FF] shadow-xl shadow-blue-900/20 transition-all hover:bg-cyan-50 hover:shadow-2xl"
+                >
+                  Telegram orqali boshlash
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
+              <Link href="#contact">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="h-14 rounded-full border-2 border-white/30 bg-white/10 px-8 text-lg font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/20"
+                >
+                  Biz bilan bog'laning
+                </Button>
+              </Link>
             </motion.div>
 
             {/* Feature Badges */}

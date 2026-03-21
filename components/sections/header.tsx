@@ -8,11 +8,11 @@ import Link from "next/link"
 import Image from "next/image"
 
 const navLinks = [
-  { label: "Bosh sahifa", href: "#" },
+  { label: "Bosh sahifa", href: "/" },
   { label: "Qanday ishlaydi", href: "#how-it-works" },
-  { label: "Hamkorlar", href: "#partners" },
   { label: "Biznes uchun", href: "#b2b" },
-  { label: "FAQ", href: "#faq" }
+  { label: "FAQ", href: "#faq" },
+  { label: "Aloqa", href: "#contact" }
 ]
 
 export function Header() {

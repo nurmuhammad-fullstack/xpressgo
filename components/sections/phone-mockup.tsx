@@ -35,7 +35,7 @@ export function PhoneMockupSection() {
           opacity: [0.2, 0.35, 0.2]
         }}
         transition={shouldReduceMotion ? undefined : { duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute left-1/4 top-1/4 h-[360px] w-[360px] rounded-full bg-gradient-to-r from-primary/20 to-secondary/20 blur-[80px] will-change-transform"
+        className="absolute left-1/4 top-1/4 h-[300px] w-[300px] rounded-full bg-gradient-to-r from-primary/15 to-secondary/15 blur-[48px] will-change-transform"
       />
       <motion.div
         animate={shouldReduceMotion ? { scale: 1, opacity: 0.2 } : {
@@ -43,7 +43,7 @@ export function PhoneMockupSection() {
           opacity: [0.15, 0.28, 0.15]
         }}
         transition={shouldReduceMotion ? undefined : { duration: 12, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-1/4 right-1/4 h-[320px] w-[320px] rounded-full bg-gradient-to-r from-secondary/20 to-cyan-400/20 blur-[72px] will-change-transform"
+        className="absolute bottom-1/4 right-1/4 h-[260px] w-[260px] rounded-full bg-gradient-to-r from-secondary/15 to-cyan-400/15 blur-[44px] will-change-transform"
       />
 
       <div className="container relative z-10 mx-auto px-4">

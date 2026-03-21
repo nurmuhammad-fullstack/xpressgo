@@ -95,7 +95,7 @@ export function FAQSection() {
           <p className="text-muted-foreground">
             Boshqa savollaringiz bormi?{" "}
             <a
-              href="#"
+              href="#contact"
               className="font-semibold text-primary underline-offset-4 hover:underline"
             >
               Biz bilan bog'laning

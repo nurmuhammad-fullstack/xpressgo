@@ -98,7 +98,7 @@ export function Header() {
                   }`}
                 >
                   <Send className="mr-2 h-4 w-4" />
-                  Telegram
+                  Telegram botni ishga tushiring
                 </Button>
               </Link>
             </div>
@@ -145,7 +145,7 @@ export function Header() {
               <Link href="https://t.me/xpressgo_bot" target="_blank" rel="noopener noreferrer" className="block">
                 <Button className="mt-4 h-12 w-full rounded-full bg-primary font-semibold text-white">
                   <Send className="mr-2 h-4 w-4" />
-                  Telegram orqali boshlash
+                  Telegram botni ishga tushiring
                 </Button>
               </Link>
             </nav>

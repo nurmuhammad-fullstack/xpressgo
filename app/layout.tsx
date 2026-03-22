@@ -14,9 +14,9 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: 'XpressGo — Navbatsiz qahva buyurtma',
-  description: 'XpressGo — Toshkentda navbatsiz qahva buyurtma bering. Tez, qulay, arzon.',
-  keywords: ['qahva', 'navbatsiz qahva', 'Toshkent', 'XpressGo', 'coffee'],
+  title: 'XpressGo — Navbatlarsiz buyurtma va tezkor xizmat',
+  description: 'XpressGo — O‘zbekistonda xizmatlarni oldindan bron qilib, navbatni butunlay chetlab o‘tish uchun Telegram bot. Hech qanday alohida ilova kerak emas.',
+  keywords: ['navbatlarsiz buyurtma', 'Telegram bot', 'O‘zbekiston', 'XpressGo', 'xizmatlarni bron qilish'],
   authors: [{ name: 'XpressGo' }],
   creator: 'XpressGo',
   publisher: 'XpressGo',
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'uz_UZ',
     url: 'https://xpressgo.uz',
-    title: 'XpressGo — Navbatsiz qahva buyurtma',
-    description: 'Navbatsiz qahva va taomlarni Toshkentda oldindan buyurtma qiling.',
+    title: 'XpressGo — Navbatlarsiz buyurtma va tezkor xizmat',
+    description: 'XpressGo bilan xizmatlarni oldindan bron qiling, navbatni chetlab o‘ting va barchasini Telegramda boshqaring.',
     siteName: 'XpressGo',
     images: [
       { url: '/og-image.jpg', width: 1200, height: 630, alt: 'XpressGo - Navbatsiz xizmat' },
@@ -44,8 +44,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'XpressGo — Navbatsiz qahva buyurtma',
-    description: 'XpressGo — Toshkentda navbatsiz qahva buyurtma bering. Tez, qulay, arzon.',
+    title: 'XpressGo — Navbatlarsiz buyurtma va tezkor xizmat',
+    description: 'XpressGo — O‘zbekistonda xizmatlarni oldindan bron qiladigan va navbatni yo‘qotadigan Telegram bot.',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -90,7 +90,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: 'XpressGo',
-  description: 'Pre-order coffee and food service in Tashkent',
+  description: 'Navbatlarsiz buyurtma va xizmatlar uchun Telegram bot platformasi',
   url: 'https://xpressgo.uz',
   telephone: '+998978285111',
   address: {

@@ -63,7 +63,7 @@ export function PhoneMockupSection() {
               className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 backdrop-blur-sm"
             >
               <Sparkles className="h-4 w-4 text-primary" />
-              <span className="text-sm font-semibold text-primary">Telegram Mini App</span>
+              <span className="text-sm font-semibold text-primary">Telegram bot</span>
             </motion.div>
 
             <h2 className="mb-6 text-balance text-4xl font-bold leading-tight text-foreground lg:text-6xl">
@@ -83,8 +83,8 @@ export function PhoneMockupSection() {
             </h2>
 
             <p className="mb-10 text-lg leading-relaxed text-muted-foreground lg:text-xl">
-              Telegram orqali buyurtma berish hech qachon bunchalik qulay bo'lmagan. 
-              Menyu, vaqt tanlash, to'lov - hammasi bir ilovada.
+              Hech qanday alohida ilova kerak emas. 
+              Menyu, vaqt tanlash, to'lov — hammasi bitta Telegram chatida.
             </p>
 
             {/* Features List with Animation */}

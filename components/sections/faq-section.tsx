@@ -11,7 +11,7 @@ import {
 const faqs = [
   {
     question: "XpressGo qanday ishlaydi?",
-    answer: "XpressGo - bu Telegram mini-app orqali ishlaydigan pre-order xizmati. Siz sevimli kafe yoki restorandan buyurtma berasiz, vaqtini tanlaysiz, Click yoki Payme orqali to'laysiz va belgilangan vaqtda navbatsiz olib ketasiz."
+    answer: "XpressGo — O‘zbekistonda xizmatlarni oldindan bron qilib, navbatni chetlab o‘tishga yordam beradigan Telegram bot. Xizmatni tanlaysiz, vaqt belgilaysiz, Click yoki Payme orqali to‘laysiz va belgilangan vaqtda navbatsiz qabul qilasiz."
   },
   {
     question: "Qaysi to'lov usullarini qo'llab-quvvatlaysiz?",

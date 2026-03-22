@@ -19,7 +19,7 @@ export default function HomePage() {
         "name": "XpressGo qanday ishlaydi?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "XpressGo - bu Telegram mini-app orqali ishlaydigan pre-order xizmati. Sevimli kafe yoki restorandan buyurtma berasiz, vaqtni tanlaysiz, Click yoki Payme orqali to\u2019laysiz va belgilangan vaqtda navbatsiz olib ketasiz."
+          "text": "XpressGo — O\u02bbzbekistonda xizmatlarni oldindan bron qilib, navbatni chetlab o\u02bbtishga yordam beradigan Telegram bot. Xizmatni tanlaysiz, vaqtni belgilang, Click yoki Payme orqali to\u2019laysiz va belgilangan vaqtda navbatsiz qabul qilasiz."
         }
       },
       {

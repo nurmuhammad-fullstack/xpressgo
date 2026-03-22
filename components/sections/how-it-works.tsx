@@ -8,7 +8,7 @@ const steps = [
   {
     icon: Send,
     title: "Telegram'ni oching",
-    description: "Bizning mini-ilovani Telegram orqali oching va menyuni ko'ring",
+    description: "Telegram botni ishga tushiring, menyu yoki xizmatlarni ko'ring",
     gradient: "from-[#0057FF] to-[#3B82F6]",
     shadowColor: "shadow-blue-500/30",
     bgGlow: "bg-blue-500/20",

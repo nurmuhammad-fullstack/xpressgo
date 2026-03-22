@@ -4,13 +4,13 @@ import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
   title: "Biz haqimizda | XpressGo",
-  description: "XpressGo — Toshkentda navbatsiz qahva va taom buyurtma qilish uchun mini-app. Jamoa, missiya va qadriyatlar bilan tanishing.",
+  description: "XpressGo — O‘zbekistonda navbatlarsiz buyurtma va tezkor xizmat uchun Telegram bot. Missiya va jamoa bilan tanishing.",
   alternates: {
     canonical: "/about",
   },
   openGraph: {
     title: "Biz haqimizda | XpressGo",
-    description: "Navbatsiz qahva va taom buyurtma xizmati ortidagi jamoa va qadriyatlar.",
+    description: "Navbatni chetlab o‘tuvchi xizmat platformasi ortidagi jamoa va qadriyatlar.",
     url: "https://xpressgo.uz/about",
   },
 }
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   const values = [
     { title: "Tezlik", text: "Buyurtmalarni 2-3 daqiqada tayyorlashga intilamiz." },
-    { title: "Ishonch", text: "Hamkor kafe va restoranlar bilan shaffof hamkorlik." },
-    { title: "Quvvat", text: "Klik/Payme to‘lovlari va Telegram mini-app orqali oddiy jarayon." },
+    { title: "Ishonch", text: "Hamkor kafe va xizmat ko‘rsatuvchilar bilan shaffof hamkorlik." },
+    { title: "Quvvat", text: "Klik/Payme to‘lovlari va yagona Telegram bot orqali soddalashtirilgan jarayon." },
   ]
 
   return (
@@ -30,11 +30,10 @@ export default function AboutPage() {
             XpressGo haqida
           </p>
           <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
-            Toshkentda navbatsiz qahva va taom buyurtmalarini tezlashtiramiz
+            O‘zbekistonda navbatlarsiz buyurtma va tezkor xizmatlarni yoyamiz
           </h1>
           <p className="text-lg text-muted-foreground">
-            XpressGo — Telegram mini-app sifatida boshlangan pre-order xizmati. Maqsadimiz kafe va restoranlar uchun
-            qo‘shimcha savdo kanali yaratish, foydalanuvchilar uchun esa navbatni yo‘qotish.
+            XpressGo — O‘zbekistonda xizmatlarni oldindan bron qilish va navbatni butunlay chetlab o‘tish uchun yaratilgan. Hech qanday alohida ilova yo‘q — barcha jarayon yagona Telegram bot orqali boshqariladi.
           </p>
         </div>
 

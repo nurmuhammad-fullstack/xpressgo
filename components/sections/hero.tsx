@@ -60,7 +60,7 @@ export function HeroSection() {
               className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/20 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm"
             >
               <Zap className="h-4 w-4" />
-              <span>Toshkentda #1 pre-order ilova</span>
+              <span>Navbatlarsiz buyurtma platformasi</span>
             </motion.div>
 
             {/* Main Headline */}
@@ -86,8 +86,7 @@ export function HeroSection() {
               variants={fadeInUp}
               className="mx-auto mb-8 max-w-lg text-pretty text-lg text-blue-100 lg:mx-0 lg:text-xl"
             >
-              Telegram orqali qahva, sharbat yoki hot-dog buyurtma bering. 
-              Vaqtini tanlang, to'lang va navbatsiz olib keting!
+              XpressGo — O‘zbekistonda xizmatlarni oldindan bron qilib, navbatni butunlay chetlab o‘tish uchun yaratilgan. Hech qanday alohida ilova kerak emas — hammasi bitta Telegram chatida.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -100,7 +99,7 @@ export function HeroSection() {
                   size="lg"
                   className="group h-14 rounded-full bg-white px-8 text-lg font-semibold text-[#0057FF] shadow-xl shadow-blue-900/20 transition-all hover:bg-cyan-50 hover:shadow-2xl"
                 >
-                  Telegram orqali boshlash
+                  Telegram botni ishga tushiring
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Button>
               </Link>

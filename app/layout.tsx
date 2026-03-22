@@ -60,12 +60,16 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/icon-light-32x32.png',
-    shortcut: '/icon-light-32x32.png',
+    icon: [
+      { url: '/favicon-48.png', type: 'image/png', sizes: '48x48' },
+      { url: '/icon-light-32x32.png', type: 'image/png', sizes: '32x32' },
+    ],
+    shortcut: '/favicon-48.png',
     apple: '/apple-icon.png',
     other: [
       { rel: 'manifest', url: '/manifest.json' },
       { rel: 'icon', url: '/icon-512.png', type: 'image/png', sizes: '512x512' },
+      { rel: 'icon', url: '/5.png', type: 'image/png', sizes: '1120x1120' },
     ],
   },
 }

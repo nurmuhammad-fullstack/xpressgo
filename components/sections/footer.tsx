@@ -7,27 +7,26 @@ import { Send, Instagram, MessageCircle, MapPin, Phone, Mail } from "lucide-reac
 
 const footerLinks = {
   product: [
+    { label: "Bosh sahifa", href: "/" },
     { label: "Qanday ishlaydi", href: "#how-it-works" },
-    { label: "Hamkorlar", href: "#partners" },
-    { label: "Narxlar", href: "#pricing" },
+    { label: "Biznes uchun", href: "#b2b" },
+    { label: "Hamkorlar", href: "/partners" },
+    { label: "Biz haqimizda", href: "/about" },
     { label: "FAQ", href: "#faq" }
   ],
   company: [
-    { label: "Biz haqimizda", href: "#about" },
-    { label: "Blog", href: "#blog" },
-    { label: "Karyera", href: "#careers" },
-    { label: "Aloqa", href: "#contact" }
+    { label: "Aloqa", href: "#contact" },
+    { label: "Telegram bot", href: "https://t.me/xpressgo_bot" },
+    { label: "Instagram", href: "https://instagram.com/xpressgo" },
+    { label: "Email", href: "mailto:hello@xpressgo.uz" }
   ],
-  legal: [
-    { label: "Maxfiylik siyosati", href: "#privacy" },
-    { label: "Foydalanish shartlari", href: "#terms" }
-  ]
+  legal: [] as { label: string; href: string }[]
 }
 
 const socialLinks = [
-  { icon: Send, label: "Telegram", href: "https://t.me/xpressgo" },
+  { icon: Send, label: "Telegram", href: "https://t.me/xpressgo_bot" },
   { icon: Instagram, label: "Instagram", href: "https://instagram.com/xpressgo" },
-  { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/998901234567" }
+  { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/998978285111" }
 ]
 
 export function Footer() {
@@ -67,7 +66,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 text-primary" />
-                <span>+998 90 123 45 67</span>
+                <span>+998 97 828 51 11</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4 text-primary" />
@@ -166,17 +165,19 @@ export function Footer() {
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} XpressGo. Barcha huquqlar himoyalangan.
           </p>
-          <div className="flex gap-6">
-            {footerLinks.legal.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                className="text-sm text-muted-foreground transition-colors hover:text-primary"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
+          {footerLinks.legal.length > 0 && (
+            <div className="flex gap-6">
+              {footerLinks.legal.map((link) => (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          )}
         </motion.div>
       </div>
     </footer>

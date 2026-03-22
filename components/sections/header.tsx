@@ -11,6 +11,8 @@ const navLinks = [
   { label: "Bosh sahifa", href: "/" },
   { label: "Qanday ishlaydi", href: "#how-it-works" },
   { label: "Biznes uchun", href: "#b2b" },
+  { label: "Hamkorlar", href: "/partners" },
+  { label: "Biz haqimizda", href: "/about" },
   { label: "FAQ", href: "#faq" },
   { label: "Aloqa", href: "#contact" }
 ]
@@ -87,16 +89,18 @@ export function Header() {
 
             {/* CTA Button */}
             <div className="hidden lg:block">
-              <Button
-                className={`h-11 rounded-full px-6 font-semibold transition-all ${
-                  isScrolled
-                    ? "bg-primary text-white hover:bg-primary/90"
-                    : "bg-white text-primary hover:bg-white/90"
-                }`}
-              >
-                <Send className="mr-2 h-4 w-4" />
-                Telegram
-              </Button>
+              <Link href="https://t.me/xpressgo_bot" target="_blank" rel="noopener noreferrer">
+                <Button
+                  className={`h-11 rounded-full px-6 font-semibold transition-all ${
+                    isScrolled
+                      ? "bg-primary text-white hover:bg-primary/90"
+                      : "bg-white text-primary hover:bg-white/90"
+                  }`}
+                >
+                  <Send className="mr-2 h-4 w-4" />
+                  Telegram
+                </Button>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -138,10 +142,12 @@ export function Header() {
                   {link.label}
                 </Link>
               ))}
-              <Button className="mt-4 h-12 w-full rounded-full bg-primary font-semibold text-white">
-                <Send className="mr-2 h-4 w-4" />
-                Telegram orqali boshlash
-              </Button>
+              <Link href="https://t.me/xpressgo_bot" target="_blank" rel="noopener noreferrer" className="block">
+                <Button className="mt-4 h-12 w-full rounded-full bg-primary font-semibold text-white">
+                  <Send className="mr-2 h-4 w-4" />
+                  Telegram orqali boshlash
+                </Button>
+              </Link>
             </nav>
           </motion.div>
         )}

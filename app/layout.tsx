@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'XpressGo' }],
   creator: 'XpressGo',
   publisher: 'XpressGo',
+  applicationName: 'XpressGo',
   formatDetection: {
     email: false,
     address: false,
@@ -33,8 +34,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'uz_UZ',
     url: 'https://xpressgo.uz',
-    title: 'XpressGo',
-    description: 'Navbatsiz qahva buyurtma bering',
+    title: 'XpressGo — Navbatsiz qahva buyurtma',
+    description: 'Navbatsiz qahva va taomlarni Toshkentda oldindan buyurtma qiling.',
     siteName: 'XpressGo',
     images: [
       { url: '/og-image.jpg', width: 1200, height: 630, alt: 'XpressGo - Navbatsiz xizmat' },
@@ -87,7 +88,7 @@ const jsonLd = {
   name: 'XpressGo',
   description: 'Pre-order coffee and food service in Tashkent',
   url: 'https://xpressgo.uz',
-  telephone: '+998901234567',
+  telephone: '+998978285111',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Tashkent',
@@ -105,7 +106,7 @@ const jsonLd = {
     closes: '23:00',
   },
   sameAs: [
-    'https://t.me/xpressgo',
+    'https://t.me/xpressgo_bot',
     'https://instagram.com/xpressgo',
   ],
 }
@@ -120,11 +121,56 @@ export default function RootLayout({
     '@type': 'WebSite',
     name: 'XpressGo',
     url: 'https://xpressgo.uz',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: 'https://xpressgo.uz/?q={search_term_string}',
-      'query-input': 'required name=search_term_string',
-    },
+    inLanguage: 'uz-UZ',
+  }
+
+  const siteNavigationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: [
+      {
+        '@type': 'SiteNavigationElement',
+        position: 1,
+        name: 'Bosh sahifa',
+        url: 'https://xpressgo.uz/',
+      },
+      {
+        '@type': 'SiteNavigationElement',
+        position: 2,
+        name: 'Qanday ishlaydi',
+        url: 'https://xpressgo.uz/#how-it-works',
+      },
+      {
+        '@type': 'SiteNavigationElement',
+        position: 3,
+        name: 'Biznes uchun',
+        url: 'https://xpressgo.uz/#b2b',
+      },
+      {
+        '@type': 'SiteNavigationElement',
+        position: 4,
+        name: 'FAQ',
+        url: 'https://xpressgo.uz/#faq',
+      },
+      {
+        '@type': 'SiteNavigationElement',
+        position: 5,
+        name: 'Aloqa',
+        url: 'https://xpressgo.uz/#contact',
+      },
+      {
+        '@type': 'SiteNavigationElement',
+        position: 6,
+        name: 'Biz haqimizda',
+        url: 'https://xpressgo.uz/about',
+      },
+      {
+        '@type': 'SiteNavigationElement',
+        position: 7,
+        name: 'Hamkorlar',
+        url: 'https://xpressgo.uz/partners',
+      },
+    ],
   }
 
   const breadcrumbSchema = {
@@ -147,13 +193,14 @@ export default function RootLayout({
     url: 'https://xpressgo.uz',
     logo: 'https://xpressgo.uz/icon-512.png',
     sameAs: [
-      'https://t.me/xpressgo',
+      'https://t.me/xpressgo_bot',
       'https://instagram.com/xpressgo',
+      'https://wa.me/998978285111',
     ],
     contactPoint: [
       {
         '@type': 'ContactPoint',
-        telephone: '+998901234567',
+        telephone: '+998978285111',
         contactType: 'customer service',
         areaServed: 'UZ',
         availableLanguage: ['uz', 'ru', 'en'],
@@ -171,6 +218,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNavigationSchema) }}
         />
         <script
           type="application/ld+json"

@@ -14,8 +14,8 @@ const contacts = [
   },
   {
     title: "Telefon",
-    href: "tel:+998901234567",
-    label: "+998 90 123 45 67",
+    href: "tel:+998978285111",
+    label: "+998 97 828 51 11",
   },
   {
     title: "Email",

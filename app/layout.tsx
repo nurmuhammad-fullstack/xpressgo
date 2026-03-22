@@ -61,10 +61,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
+      { url: '/favicon.ico', type: 'image/x-icon' },
       { url: '/favicon-48.png', type: 'image/png', sizes: '48x48' },
       { url: '/icon-light-32x32.png', type: 'image/png', sizes: '32x32' },
     ],
-    shortcut: '/favicon-48.png',
+    shortcut: ['/favicon.ico', '/favicon-48.png'],
     apple: '/apple-icon.png',
     other: [
       { rel: 'manifest', url: '/manifest.json' },

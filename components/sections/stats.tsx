@@ -9,7 +9,7 @@ function AnimatedCounter({
   suffix = "",
   duration = 2 
 }: { 
-  value: number
+  value: number | string
   suffix?: string
   duration?: number
 }) {
@@ -18,7 +18,7 @@ function AnimatedCounter({
   const isInView = useInView(ref, { once: true })
 
   useEffect(() => {
-    if (!isInView) return
+    if (!isInView || typeof value !== "number") return
 
     const startTime = Date.now()
     const endTime = startTime + duration * 1000
@@ -38,6 +38,10 @@ function AnimatedCounter({
     requestAnimationFrame(animate)
   }, [isInView, value, duration])
 
+  if (typeof value === "string") {
+    return <span ref={ref}>{value}{suffix}</span>
+  }
+
   return (
     <span ref={ref}>
       {count.toLocaleString()}{suffix}
@@ -48,30 +52,30 @@ function AnimatedCounter({
 const stats = [
   {
     icon: Users,
-    value: 15000,
-    suffix: "+",
-    label: "Foydalanuvchilar",
+    value: "Beta",
+    suffix: " bosqich",
+    label: "Erta foydalanuvchilar",
     color: "from-blue-500 to-cyan-500"
   },
   {
     icon: ShoppingBag,
-    value: 85000,
-    suffix: "+",
+    value: "Tez orada",
+    suffix: "",
     label: "Buyurtmalar",
     color: "from-cyan-500 to-teal-500"
   },
   {
     icon: Store,
-    value: 120,
-    suffix: "+",
-    label: "Hamkor kafelar",
+    value: "Ochilmoqda",
+    suffix: "",
+    label: "Hamkorlar",
     color: "from-teal-500 to-green-500"
   },
   {
     icon: Star,
-    value: 4.9,
+    value: "Yangi",
     suffix: "",
-    label: "O'rtacha reyting",
+    label: "Reyting",
     color: "from-amber-400 to-orange-500"
   }
 ]
@@ -91,8 +95,7 @@ export function StatsSection() {
             Raqamlarda <span className="text-primary">XpressGo</span>
           </h2>
           <p className="mx-auto max-w-2xl text-muted-foreground">
-            Toshkent bo'ylab minglab foydalanuvchilar har kuni navbatsiz 
-            xizmatdan foydalanmoqda
+            Beta bosqichidamiz: dastlabki foydalanuvchilar va hamkorlarni qo'shish ustida ishlayapmiz.
           </p>
         </motion.div>
 

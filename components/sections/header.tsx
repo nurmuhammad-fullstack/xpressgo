@@ -89,7 +89,7 @@ export function Header() {
 
             {/* CTA Button */}
             <div className="hidden lg:block">
-              <Link href="https://t.me/xpressgo_bot" target="_blank" rel="noopener noreferrer">
+              <Link href="https://t.me/xpress_go_bot" target="_blank" rel="noopener noreferrer">
                 <Button
                   className={`h-11 rounded-full px-6 font-semibold transition-all ${
                     isScrolled
@@ -142,7 +142,7 @@ export function Header() {
                   {link.label}
                 </Link>
               ))}
-              <Link href="https://t.me/xpressgo_bot" target="_blank" rel="noopener noreferrer" className="block">
+              <Link href="https://t.me/xpress_go_bot" target="_blank" rel="noopener noreferrer" className="block">
                 <Button className="mt-4 h-12 w-full rounded-full bg-primary font-semibold text-white">
                   <Send className="mr-2 h-4 w-4" />
                   Telegram botni ishga tushiring

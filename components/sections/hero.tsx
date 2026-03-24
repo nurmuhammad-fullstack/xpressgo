@@ -94,7 +94,7 @@ export function HeroSection() {
               variants={fadeInUp}
               className="flex flex-col items-center gap-4 sm:flex-row lg:justify-start"
             >
-              <Link href="https://t.me/xpressgo_bot" target="_blank" rel="noopener noreferrer">
+              <Link href="https://t.me/xpress_go_bot" target="_blank" rel="noopener noreferrer">
                 <Button
                   size="lg"
                   className="group h-14 rounded-full bg-white px-8 text-lg font-semibold text-[#0057FF] shadow-xl shadow-blue-900/20 transition-all hover:bg-cyan-50 hover:shadow-2xl"

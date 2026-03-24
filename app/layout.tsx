@@ -111,7 +111,7 @@ const jsonLd = {
     closes: '23:00',
   },
   sameAs: [
-    'https://t.me/xpressgo_bot',
+    'https://t.me/xpress_go_bot',
     'https://instagram.com/xpressgo',
   ],
 }
@@ -198,7 +198,7 @@ export default function RootLayout({
     url: 'https://xpressgo.uz',
     logo: 'https://xpressgo.uz/icon-512.png',
     sameAs: [
-      'https://t.me/xpressgo_bot',
+      'https://t.me/xpress_go_bot',
       'https://instagram.com/xpressgo',
       'https://wa.me/998978285111',
     ],

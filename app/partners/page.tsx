@@ -53,7 +53,7 @@ export default function PartnersPage() {
             Filial sonidan qat’i nazar, shartnoma va integratsiyani tezda tayyorlab beramiz.
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
-            <Link href="https://t.me/xpressgo_bot" target="_blank" rel="noopener noreferrer">
+            <Link href="https://t.me/xpress_go_bot" target="_blank" rel="noopener noreferrer">
               <Button size="lg">Telegramdan yozish</Button>
             </Link>
             <Link href="mailto:hello@xpressgo.uz">

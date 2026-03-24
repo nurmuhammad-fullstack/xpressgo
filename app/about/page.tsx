@@ -52,7 +52,7 @@ export default function AboutPage() {
             Hamkorlik, media yoki savollar uchun yozing. 15 daqiqa ichida javob beramiz.
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
-            <Link href="https://t.me/xpressgo_bot" target="_blank" rel="noopener noreferrer">
+            <Link href="https://t.me/xpress_go_bot" target="_blank" rel="noopener noreferrer">
               <Button size="lg">Telegram bot</Button>
             </Link>
             <Link href="mailto:hello@xpressgo.uz">

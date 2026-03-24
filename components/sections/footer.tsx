@@ -16,7 +16,7 @@ const footerLinks = {
   ],
   company: [
     { label: "Aloqa", href: "#contact" },
-    { label: "Telegram bot", href: "https://t.me/xpressgo_bot" },
+    { label: "Telegram bot", href: "https://t.me/xpress_go_bot" },
     { label: "Instagram", href: "https://instagram.com/xpressgo" },
     { label: "Email", href: "mailto:hello@xpressgo.uz" }
   ],
@@ -24,7 +24,7 @@ const footerLinks = {
 }
 
 const socialLinks = [
-  { icon: Send, label: "Telegram", href: "https://t.me/xpressgo_bot" },
+  { icon: Send, label: "Telegram", href: "https://t.me/xpress_go_bot" },
   { icon: Instagram, label: "Instagram", href: "https://instagram.com/xpressgo" },
   { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/998978285111" }
 ]
@@ -141,7 +141,7 @@ export function Footer() {
                   Telegram orqali buyurtma berishni boshlang
                 </p>
                 <a
-                  href="https://t.me/xpressgo_bot"
+                  href="https://t.me/xpress_go_bot"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary to-secondary px-5 py-3 text-sm font-semibold text-white shadow-md transition-all hover:shadow-lg"

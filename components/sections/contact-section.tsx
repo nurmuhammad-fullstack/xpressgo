@@ -9,8 +9,8 @@ import { Textarea } from "@/components/ui/textarea"
 const contacts = [
   {
     title: "Telegram",
-    href: "https://t.me/xpressgo_bot",
-    label: "@xpressgo_bot",
+    href: "https://t.me/xpress_go_bot",
+    label: "@xpress_go_bot",
   },
   {
     title: "Telefon",
@@ -55,7 +55,7 @@ export function ContactSection() {
               Telegram, qo‘ng‘iroq yoki email — qaysi kanal qulay bo‘lsa, shu yerdan yozing. Ish vaqti: 07:00–23:00, biznes hamkorlarga ustuvor navbat.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Link href="https://t.me/xpressgo_bot" target="_blank" rel="noopener noreferrer">
+              <Link href="https://t.me/xpress_go_bot" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="h-12 rounded-full bg-white px-6 text-slate-950 shadow-xl shadow-cyan-400/25 transition hover:-translate-y-0.5 hover:shadow-cyan-300/40">
                   Telegramdan yozish
                 </Button>

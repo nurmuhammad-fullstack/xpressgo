@@ -66,25 +66,25 @@ export function HeroSection() {
             {/* Main Headline */}
             <motion.h1
               variants={fadeInUp}
-              className="mb-6 text-balance text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl"
+              className="mb-6 text-balance text-[clamp(1.75rem,4.2vw,3.25rem)] font-extrabold leading-[1.08] tracking-tight text-white"
             >
-              Navbat yo'q.{" "}
+              Vaqtingizni navbatda emas,{" "}
               <span className="relative">
-                <span className="relative z-10">Buyurtma ber,</span>
+                <span className="relative z-10">o'zingizga</span>
                 <motion.span
                   initial={{ width: 0 }}
                   animate={{ width: "100%" }}
                   transition={{ delay: 0.8, duration: 0.6 }}
-                  className="absolute bottom-2 left-0 h-3 bg-cyan-300/40 lg:h-4"
+                  className="absolute bottom-[0.12em] left-0 h-[0.24em] bg-cyan-300/40"
                 />
               </span>{" "}
-              <span className="text-cyan-200">kelib ol.</span>
+              <span className="text-cyan-200">sarflang.</span>
             </motion.h1>
 
             {/* Subheadline */}
             <motion.p
               variants={fadeInUp}
-              className="mx-auto mb-8 max-w-lg text-pretty text-lg text-blue-100 lg:mx-0 lg:text-xl"
+              className="mx-auto mb-8 max-w-lg text-pretty text-sm text-blue-100 sm:text-base lg:mx-0 lg:text-lg"
             >
               XpressGo — O‘zbekistonda xizmatlarni oldindan bron qilib, navbatni butunlay chetlab o‘tish uchun yaratilgan. Hech qanday alohida ilova kerak emas — hammasi bitta Telegram chatida.
             </motion.p>
@@ -97,7 +97,7 @@ export function HeroSection() {
               <Link href="https://t.me/xpress_go_bot" target="_blank" rel="noopener noreferrer">
                 <Button
                   size="lg"
-                  className="group h-14 rounded-full bg-white px-8 text-lg font-semibold text-[#0057FF] shadow-xl shadow-blue-900/20 transition-all hover:bg-cyan-50 hover:shadow-2xl"
+                  className="group h-12 rounded-full bg-white px-6 text-base font-semibold text-[#0057FF] shadow-xl shadow-blue-900/20 transition-all hover:bg-cyan-50 hover:shadow-2xl"
                 >
                   Telegram botni ishga tushiring
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
@@ -107,7 +107,7 @@ export function HeroSection() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="h-14 rounded-full border-2 border-white/30 bg-white/10 px-8 text-lg font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/20"
+                  className="h-12 rounded-full border-2 border-white/30 bg-white/10 px-6 text-base font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/20"
                 >
                   Biz bilan bog'laning
                 </Button>
